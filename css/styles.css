@@ -5,6 +5,7 @@
 
 }
 
+
 @font-face {
     font-family: "rowdies";
     src: url(../fonts/rowdies.ttf);
@@ -14,7 +15,7 @@
 
 body {
     font-family: "rowdies", Arial, Helvetica, sans-serif;
-    background-color: rgba(153, 223, 164, 0.849);
+    background-color: rgba(255, 255, 255, 0.849);
     align-items: center;
     justify-content: center;
 
@@ -174,7 +175,7 @@ h3 {
 
 .container-productos {
     border: solid black;
-
+    background-color: white;
 
     display: flex;
     justify-content: center;
@@ -279,15 +280,17 @@ h3 {
         grid-template-columns: 1fr;
         justify-content: center;
         align-content: center;
+        background-color: white;
     }
 
     .header {
 
         display: grid;
         grid-template-columns: 1fr;
-        width: fit-content;
+
         justify-content: center;
         align-content: center;
+
     }
 
     .header__header {
@@ -302,9 +305,6 @@ h3 {
 
 /* FIN DEL DIV DE PRODUCTOS */
 
-.linka {
-    color: red;
-}
 
 
 /* Css para el CONTAINER COMO COMPRAR. ---  */
@@ -497,6 +497,72 @@ div.social {
         display: none;
     }
 }
+
+/* #---- Quienes  SOMOS  index ----# */
+
+
+.columna {
+    float: left;
+    width: 33%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container-somos {
+    background-color: #2a8bed49;
+border-radius: 50px;
+    gap: 10px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.titulo {
+    color: rgb(201, 26, 26);
+}
+
+
+.button:hover {
+    background-color: #555;
+}
+
+.imagen-quienessomos {
+    width: 100%;
+
+}
+
+.header__equipo {
+    font-size: 3rem;
+}
+
+@media (min-width:468px) and (max-width: 750px) {
+    .columna {
+        width: 100%;
+        display: block;
+    }
+}
+
+
 
 /* #---- Contactos index ----# */
 
@@ -751,20 +817,7 @@ span {
 }
 
 /*  ------*  CSS PARA  accesorios----------------------------------------------- */
-.productos-accesorios {
 
-    margin: 10px;
-    padding: 10px;
-    gap: 10px;
-    border: solid cornflowerblue;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.productos-accesorios img {
-    width: 100%;
-}
 
 /*
 
