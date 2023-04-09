@@ -324,14 +324,6 @@ h3 {
 
 }
 
-/* class para imganes de PALETAS PELOTAS ACCESORIOS */
-
-
-
-
-
-/* FIN */
-
 
 
 p {
@@ -365,7 +357,7 @@ p {
 
 
 .probar-paleta:hover {
-    color: rgb(16, 20, 247);
+    color: rgb(16, 247, 151);
 }
 
 
@@ -497,9 +489,20 @@ div.social {
         display: none;
     }
 }
+/* #################################### */
+
+
 
 /* #---- Quienes  SOMOS  index ----# */
 
+.container-quienes-somos {
+
+    background-color:  #2a8bed2c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+}
 
 .columna {
     float: left;
@@ -525,8 +528,8 @@ div.social {
 }
 
 .container-somos {
-    background-color: #2a8bed49;
-border-radius: 50px;
+    background-color: #2a8bed33;
+    border-radius: 50px;
     gap: 10px;
 }
 
@@ -541,6 +544,17 @@ border-radius: 50px;
     color: rgb(201, 26, 26);
 }
 
+.contenedor__quienessomos {
+    padding: 70px 0;
+    border-radius: 3px solid green;
+    text-align: center;
+}
+
+.contenedor__quienessomos--article {
+    line-height: 1 .5;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .button:hover {
     background-color: #555;
@@ -553,13 +567,29 @@ border-radius: 50px;
 
 .header__equipo {
     font-size: 3rem;
+    padding: 25px;
 }
 
-@media (min-width:468px) and (max-width: 750px) {
+@media (min-width:468px) and (max-width: 760px) {
     .columna {
+
         width: 100%;
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
     }
+}
+@media (min-width:761) and (max-width: 980px) {
+    .columna {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    
+        
+    }
+
+    
 }
 
 
@@ -573,13 +603,7 @@ border-radius: 50px;
     color: whitesmoke
 }
 
-.container-quienes-somos {
-    padding: 30px;
-    margin: 30px;
-    background-color: rgba(185, 177, 185, 0.479);
-    display: flex;
-    justify-content: space-around
-}
+
 
 .quienes-somos-titulo {
     font-size: 3em;
@@ -593,6 +617,7 @@ border-radius: 50px;
 
 strong {
     font-family: "rowdies";
+    font-weight: 300;
     font-size: 2em;
 }
 
@@ -742,22 +767,18 @@ strong {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* #---- paletas index ----# */
 /* CSS PARA Paletas */
 
+.probar__paleta {
+    text-align: center;
+    font-size: 10px;
+}
+
+.probar__paleta--parrafo {
+    font-size: 1.5rem;
+    color: tomato;
+}
 
 .titulo-pagina-paletas {
     padding: 10px;
@@ -767,12 +788,22 @@ strong {
     font-size: 3rem;
 }
 
-.cuadro {
-    border: solid black;
-    text-align: center;
-    justify-content: center;
 
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 60px;
+    overflow: hidden;
+}
 
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -815,6 +846,17 @@ span {
     color: red;
     padding: 20px;
 }
+
+.container__productos--pelotas {
+    
+    
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
 
 /*  ------*  CSS PARA  accesorios----------------------------------------------- */
 
