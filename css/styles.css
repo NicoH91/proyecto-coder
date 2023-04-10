@@ -553,7 +553,7 @@ div.social {
 
 /*****************/
 
-@media (min-width: 468px) and (max-width: 992px) {
+@media (min-width: 320px) and (max-width: 992px) {
     .quienessomos {
         grid-template-columns: 1fr;
         width: 100%;
