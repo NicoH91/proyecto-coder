@@ -11,21 +11,15 @@
     src: url(../fonts/rowdies.ttf);
 }
 
-
-
 body {
     font-family: "rowdies", Arial, Helvetica, sans-serif;
-    background-color: rgba(255, 255, 255, 0.849);
+    background-color: rgba(10, 10, 10, 0.24);
     align-items: center;
     justify-content: center;
-
-
-    ;
 }
 
 .space {
     padding: 35px;
-
 }
 
 .boton-paginas {
@@ -39,20 +33,12 @@ body {
 }
 
 ul li a:hover {
-    color: #2a8ded;
+     color: #06d6a0;
 }
-
 
 /* Css para los links */
 
-.home {
-    margin-left: 50%;
-    display: inline-block;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: rgb(253, 208, 9);
 
-}
 
 .nav-link {
     font-size: 1.5em;
@@ -165,13 +151,6 @@ h3 {
 /* FIN */
 
 /*Css para el CONTAINER PRODUCTOS - T */
-.lista {
-    margin: 3px;
-    display: flex;
-    justify-content: space-around;
-}
-
-
 
 .container-productos {
     border: solid black;
@@ -183,23 +162,18 @@ h3 {
 
 }
 
-
 /*    PROBANDO IMAGENESOVERLAY    */
 
 
 .image {
     position: relative;
     width: 100%;
-
-
 }
 
 .image__img {
     display: block;
     width: 100%;
-
 }
-
 
 .image__overlay {
     position: absolute;
@@ -246,14 +220,6 @@ h3 {
     margin-top: 0.25em;
 
 }
-
-
-
-
-
-
-
-
 
 /* ######################################## */
 
@@ -313,18 +279,21 @@ h3 {
 
 
 
+/*
 
-.parrafo-imagenes {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 200;
-    color: rgba(255, 255, 255, 0.993);
-    font-weight: bold;
-    position: absolute;
 
+
+
+
+
+
+
+*/
+.titulo-tabla {
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px;
 }
-
-
 
 p {
     text-align: center;
@@ -333,31 +302,9 @@ p {
 
 }
 
-.titulo-tabla {
-    text-decoration: underline;
-    padding: 10px;
-    margin: 10px;
-}
-
-.contenedor-tabla {
-    display: grid;
-    column-gap: 10px;
-    row-gap: 10px;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-
-
-}
-
-
-
-
-
-
 
 .probar-paleta:hover {
-    color: rgb(16, 247, 151);
+    color: #06d6a0;
 }
 
 
@@ -489,109 +436,166 @@ div.social {
         display: none;
     }
 }
-/* #################################### */
+
+/* ####################################  */
+.body-quienessomos {
+    font-family:  "rowdies", serif;
+    display: grid;
+    background-color: #f4f4f4;
+    align-content: center;
+    
+}
 
 
 
-/* #---- Quienes  SOMOS  index ----# */
+.quienessomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    width: auto;
+    margin: 0 auto;
+}
 
-.container-quienes-somos {
+.img-quienessomos {
+    background: url("../img/img-contacto-index/img-quienessomos.jpg ") center/cover no-repeat;
+}
 
-    background-color:  #2a8bed2c;
+.content {
+    background: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border-radius: 50px;
+   
 }
 
-.columna {
-    float: left;
-    width: 33%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+.content h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+    
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
+.content span {
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+    
 }
 
-.about-section {
-    padding: 50px;
+.content p {
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
     text-align: center;
-    background-color: #474e5d;
-    color: white;
+    margin: 0 auto;
+    line-height: 1.7;
+    
 }
 
-.container {
-    padding: 0 16px;
+.links__quienesomos {
+    margin: 15px 0;
 }
 
-.container-somos {
-    background-color: #2a8bed33;
-    border-radius: 50px;
-    gap: 10px;
-}
-
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.titulo {
-    color: rgb(201, 26, 26);
-}
-
-.contenedor__quienessomos {
-    padding: 70px 0;
-    border-radius: 3px solid green;
+.links__quienesomos li {
+    border: 0.5px solid #777;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
     text-align: center;
 }
 
-.contenedor__quienessomos--article {
-    line-height: 1 .5;
-    display: inline-block;
-    vertical-align: middle;
+.links__quienesomos li a {
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
 }
 
-.button:hover {
-    background-color: #555;
+.links__quienesomos li:hover {
+    border-color: #06d6a0;
 }
 
-.imagen-quienessomos {
-    width: 100%;
-
+.links__quienesomos li:hover a {
+    color: #06d6a0;
 }
 
-.header__equipo {
-    font-size: 3rem;
-    padding: 25px;
+.linea{
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
 }
 
-@media (min-width:468px) and (max-width: 760px) {
-    .columna {
+.icons {
+    display: flex;
+    padding: 15px 0;
+}
 
-        width: 100%;
-        display: grid;
+.icons li {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.icons li i {
+    font-size: 26px;
+    opacity: 0.8;
+}
+
+.icons li i:hover {
+    color: #06d6a0;
+}
+
+
+/*****************/
+
+@media (min-width: 468px) and (max-width: 992px) {
+    .quienessomos {
         grid-template-columns: 1fr;
-    }
-}
-@media (min-width:761) and (max-width: 980px) {
-    .columna {
-
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-    
-        
     }
 
-    
-}
+    .img-quienessomos {
+        height: 100vh;
+    }
 
+    .content {
+        height: 100vh;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .content span {
+        margin: 20px 0;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .links__quienesomos li a {
+        font-size: 14px;
+    }
+
+    .links__quienesomos {
+        margin: 5px 0;
+    }
+
+    .links__quienesomos li {
+        padding: 6px 10px;
+    }
+
+    .icons li i {
+        font-size: 15px;
+    }
+}
 
 
 /* #---- Contactos index ----# */
@@ -604,16 +608,6 @@ div.social {
 }
 
 
-
-.quienes-somos-titulo {
-    font-size: 3em;
-}
-
-.texto-quienes-somos {
-    color: rgb(0, 0, 0);
-    font-size: 2em;
-    font-family: "rowdies", Arial, Helvetica, sans-serif;
-}
 
 strong {
     font-family: "rowdies";
@@ -777,7 +771,7 @@ strong {
 
 .probar__paleta--parrafo {
     font-size: 1.5rem;
-    color: tomato;
+    color: rgb(5, 5, 5);
 }
 
 .titulo-pagina-paletas {
@@ -808,12 +802,7 @@ strong {
 
 
 
-span {
-    padding: auto;
-    flex-grow: center;
-    display: block;
-    margin: 0 auto;
-}
+
 
 .probar-paleta {
     padding: 20px;
@@ -829,16 +818,6 @@ span {
 
 /*  ------*  CSS PARA  PELOTAS----------------------------------------------- */
 
-.productos-pelotas {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-
-.productos-pelotas img {
-
-    width: 70%;
-}
 
 .pelotas-aviso {
     font-family: "rowdies";
@@ -848,8 +827,6 @@ span {
 }
 
 .container__productos--pelotas {
-    
-    
 
     display: flex;
     justify-content: center;
@@ -858,11 +835,3 @@ span {
 }
 
 
-/*  ------*  CSS PARA  accesorios----------------------------------------------- */
-
-
-/*
-
-REVISAR.. 
-
-*/
