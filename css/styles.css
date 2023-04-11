@@ -16,6 +16,7 @@ body {
     background-color: rgba(10, 10, 10, 0.24);
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 .space {
@@ -33,7 +34,7 @@ body {
 }
 
 ul li a:hover {
-     color: #06d6a0;
+    color: #06d6a0;
 }
 
 /* Css para los links */
@@ -43,6 +44,10 @@ ul li a:hover {
 .nav-link {
     font-size: 1.5em;
     color: whitesmoke
+}
+
+.nav-link:hover {
+    color: #06d6a0;
 }
 
 a {
@@ -439,11 +444,11 @@ div.social {
 
 /* ####################################  */
 .body-quienessomos {
-    font-family:  "rowdies", serif;
+    font-family: "rowdies", serif;
     display: grid;
     background-color: #f4f4f4;
     align-content: center;
-    
+
 }
 
 
@@ -466,7 +471,7 @@ div.social {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 .content h2 {
@@ -474,7 +479,7 @@ div.social {
     font-size: 36px;
     letter-spacing: 6px;
     opacity: 0.9;
-    
+
 }
 
 .content span {
@@ -482,7 +487,7 @@ div.social {
     width: 80px;
     background: #777;
     margin: 30px 0;
-    
+
 }
 
 .content p {
@@ -493,7 +498,7 @@ div.social {
     text-align: center;
     margin: 0 auto;
     line-height: 1.7;
-    
+
 }
 
 .links__quienesomos {
@@ -523,7 +528,7 @@ div.social {
     color: #06d6a0;
 }
 
-.linea{
+.linea {
     height: 30px;
     width: 0.5px;
     background: #777;
@@ -834,4 +839,21 @@ strong {
 
 }
 
+.header__construccion {
+    font-family: "rowdies";
+   
+    font-size: 3rem;
+    height: 100vh;
+    width: 100%;
+ 
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.parrafo__construccion {
+    font-size: 3rem;
+    transform: translate(0%, 300%);
+    color: #d7fff4;
+}
 
