@@ -1,0 +1,32 @@
+.pelotas-aviso {
+    font-family: "rowdies";
+    font-size: 2rem;
+    color: red;
+    padding: 20px;
+}
+
+.container__productos--pelotas {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.header__construccion {
+    font-family: "rowdies";
+
+    font-size: 3rem;
+    height: 100vh;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.parrafo__construccion {
+    font-size: 3rem;
+    transform: translate(0%, 300%);
+    color: #d7fff4;
+}

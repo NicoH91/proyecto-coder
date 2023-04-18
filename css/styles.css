@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    width: 100%;
 }
-
 
 @font-face {
     font-family: "rowdies";
@@ -16,7 +15,6 @@ body {
     background-color: rgba(10, 10, 10, 0.24);
     align-items: center;
     justify-content: center;
-    max-width: 100%;
 }
 
 .space {
@@ -26,24 +24,28 @@ body {
 .boton-paginas {
     background-color: rgb(204, 172, 111);
     border: solid;
-
     font-size: 1em;
     padding: 0.5em;
     border-radius: 10px;
-
 }
 
 ul li a:hover {
     color: #06d6a0;
 }
 
-/* Css para los links */
+.icon__cart {
+    margin-left: 10px;
+}
 
-
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space;
+}
 
 .nav-link {
     font-size: 1.5em;
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 .nav-link:hover {
@@ -51,7 +53,6 @@ ul li a:hover {
 }
 
 a {
-
     display: flex;
     justify-content: center;
     gap: 1px;
@@ -59,116 +60,6 @@ a {
     text-decoration: none;
     color: rgb(224, 12, 12);
 }
-
-.header {
-    background-color: #121315;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "rowdies", Arial, Helvetica, sans-serif;
-}
-
-.header h3 {
-    color: whitesmoke;
-}
-
-.form {
-
-    padding: 10px;
-    justify-content: center;
-
-}
-
-input {
-    text-align: center;
-    border-radius: 20px;
-    font-size: 1em;
-}
-
-/* css para la barra de navegacion */
-ol,
-ul {
-    list-style: none;
-
-}
-
-
-li {
-    display: inline-block
-}
-
-h2 {
-    font-family: "rowdies", Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-h3 {
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 200;
-    font-family: "rowdies", Arial, Helvetica, sans-serif;
-}
-
-
-
-/* logo  */
-.logo {
-    display: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-}
-
-/* css para el div de TODAS LAS marcas */
-
-
-.container-marcas {
-
-    background-color: rgba(0, 0, 0, 0.589);
-    border: solid;
-    text-align: center;
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-
-.container-marcas img {
-    width: auto;
-    height: auto;
-    justify-content: center;
-    align-content: center;
-
-}
-
-.container-marcas figcaption {
-    color: white;
-    font-size: 1.3em;
-    font-style: italic;
-}
-
-/* FIN */
-
-/*Css para el CONTAINER PRODUCTOS - T */
-
-.container-productos {
-    border: solid black;
-    background-color: white;
-
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
-}
-
-/*    PROBANDO IMAGENESOVERLAY    */
-
 
 .image {
     position: relative;
@@ -198,7 +89,6 @@ h3 {
 
 .image__overlay--blur {
     backdrop-filter: blur(5px);
-
 }
 
 /* a todos los hijos directos */
@@ -223,12 +113,9 @@ h3 {
 .image__description {
     font-size: 2.25em;
     margin-top: 0.25em;
-
 }
 
-/* ######################################## */
-
-@media (min-width : 320px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
     .nav {
         display: grid;
         grid-template-columns: 1fr;
@@ -254,14 +141,15 @@ h3 {
         background-color: white;
     }
 
-    .header {
+    h3 {
+        font-size: 1rem;
+    }
 
+    .header {
         display: grid;
         grid-template-columns: 1fr;
-
         justify-content: center;
         align-content: center;
-
     }
 
     .header__header {
@@ -271,73 +159,7 @@ h3 {
         justify-content: center;
         align-content: center;
     }
-
 }
-
-/* FIN DEL DIV DE PRODUCTOS */
-
-
-
-/* Css para el CONTAINER COMO COMPRAR. ---  */
-
-
-
-
-
-/*
-
-
-
-
-
-
-
-
-*/
-.titulo-tabla {
-    text-decoration: underline;
-    padding: 10px;
-    margin: 10px;
-}
-
-p {
-    text-align: center;
-    font-size: 25px;
-
-
-}
-
-
-.probar-paleta:hover {
-    color: #06d6a0;
-}
-
-
-/* css para el DIV DE NOTICIAS Y CARRUSEL FUTURO.*/
-
-
-
-.titulo-noticias {
-    margin: 5px;
-    padding: 10px;
-}
-
-.texto-noticias {
-    margin: 10px;
-    padding: 15px;
-
-}
-
-.link-paddel-tour {
-    padding: 10px;
-    margin: 10px;
-
-}
-
-/* FIN NOTICIAS.*/
-
-
-
 
 footer {
     display: flex;
@@ -387,7 +209,7 @@ footer {
 .footer-li a {
     color: #a7a7a7;
     text-decoration: none;
-    font-size: 1.5em
+    font-size: 1.5em;
 }
 
 .footer-li ul {
@@ -400,7 +222,6 @@ footer {
     text-decoration: none;
 }
 
-
 .about p {
     text-align: justify;
     line-height: 2;
@@ -409,7 +230,6 @@ footer {
 
 .contenedor-mapa h3 {
     color: white;
-
 }
 
 .informacion {
@@ -428,13 +248,9 @@ div.social {
     color: #f8f8f8;
 }
 
-
-
 @media screen and (max-width: 850px) {
     .row.primary {
         grid-template-columns: 1fr;
-
-
     }
 
     .mapa {
@@ -442,177 +258,10 @@ div.social {
     }
 }
 
-/* ####################################  */
-.body-quienessomos {
-    font-family: "rowdies", serif;
-    display: grid;
-    background-color: #f4f4f4;
-    align-content: center;
-
-}
-
-
-
-.quienessomos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 100vh;
-    width: auto;
-    margin: 0 auto;
-}
-
-.img-quienessomos {
-    background: url("../img/img-contacto-index/img-quienessomos.jpg ") center/cover no-repeat;
-}
-
-.content {
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.content h2 {
-    text-transform: uppercase;
-    font-size: 36px;
-    letter-spacing: 6px;
-    opacity: 0.9;
-
-}
-
-.content span {
-    height: 0.5px;
-    width: 80px;
-    background: #777;
-    margin: 30px 0;
-
-}
-
-.content p {
-    padding-bottom: 15px;
-    font-weight: 300;
-    opacity: 0.7;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 1.7;
-
-}
-
-.links__quienesomos {
-    margin: 15px 0;
-}
-
-.links__quienesomos li {
-    border: 0.5px solid #777;
-    list-style: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    width: 160px;
-    text-align: center;
-}
-
-.links__quienesomos li a {
-    text-transform: uppercase;
-    color: #777;
-    text-decoration: none;
-}
-
-.links__quienesomos li:hover {
-    border-color: #06d6a0;
-}
-
-.links__quienesomos li:hover a {
-    color: #06d6a0;
-}
-
-.linea {
-    height: 30px;
-    width: 0.5px;
-    background: #777;
-    margin: 0 auto;
-}
-
-.icons {
-    display: flex;
-    padding: 15px 0;
-}
-
-.icons li {
-    display: block;
-    padding: 5px;
-    margin: 5px;
-}
-
-.icons li i {
-    font-size: 26px;
-    opacity: 0.8;
-}
-
-.icons li i:hover {
-    color: #06d6a0;
-}
-
-
-/*****************/
-
-@media (min-width: 320px) and (max-width: 992px) {
-    .quienessomos {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-
-    .img-quienessomos {
-        height: 100vh;
-    }
-
-    .content {
-        height: 100vh;
-    }
-
-    .content h2 {
-        font-size: 20px;
-        margin-top: 50px;
-    }
-
-    .content span {
-        margin: 20px 0;
-    }
-
-    .content p {
-        font-size: 14px;
-    }
-
-    .links__quienesomos li a {
-        font-size: 14px;
-    }
-
-    .links__quienesomos {
-        margin: 5px 0;
-    }
-
-    .links__quienesomos li {
-        padding: 6px 10px;
-    }
-
-    .icons li i {
-        font-size: 15px;
-    }
-}
-
-
-/* #---- Contactos index ----# */
-
-
-/* CSS PARA CONTACTOS */
 .border {
     background-color: #121315;
-    color: whitesmoke
+    color: whitesmoke;
 }
-
-
 
 strong {
     font-family: "rowdies";
@@ -647,14 +296,12 @@ strong {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-
 .container__formulario header {
     font-size: 1.5rem;
     color: #333;
     font-weight: 500;
     text-align: center;
 }
-
 
 .container__formulario .form {
     margin-top: 30px;
@@ -766,9 +413,6 @@ strong {
     }
 }
 
-/* #---- paletas index ----# */
-/* CSS PARA Paletas */
-
 .probar__paleta {
     text-align: center;
     font-size: 10px;
@@ -787,7 +431,6 @@ strong {
     font-size: 3rem;
 }
 
-
 .responsive-video {
     position: relative;
     padding-bottom: 56.25%;
@@ -805,24 +448,14 @@ strong {
     height: 100%;
 }
 
-
-
-
-
 .probar-paleta {
     padding: 20px;
     margin: 20px;
     text-align: center;
-
     font-size: 30px;
     color: rgb(255, 255, 255);
     border-radius: 20px;
 }
-
-
-
-/*  ------*  CSS PARA  PELOTAS----------------------------------------------- */
-
 
 .pelotas-aviso {
     font-family: "rowdies";
@@ -832,20 +465,16 @@ strong {
 }
 
 .container__productos--pelotas {
-
     display: flex;
     justify-content: center;
     text-align: center;
-
 }
 
 .header__construccion {
     font-family: "rowdies";
-   
     font-size: 3rem;
     height: 100vh;
     width: 100%;
- 
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -857,3 +486,270 @@ strong {
     color: #d7fff4;
 }
 
+.body-quienessomos {
+    font-family: "rowdies", serif;
+    display: grid;
+    background-color: #f4f4f4;
+    align-content: center;
+}
+
+.quienessomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+.img-quienessomos {
+    background: url("../img/img-contacto-index/img-quienessomos.jpg ") center/cover no-repeat;
+}
+
+.content {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: normal;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+}
+
+.content span {
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+
+.content p {
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.links__quienesomos {
+    margin: 15px 0;
+}
+
+.links__quienesomos li {
+    border: 0.5px solid #777;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+    justify-content: center;
+}
+
+.links__quienesomos li a {
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+
+.links__quienesomos li:hover {
+    border-color: #06d6a0;
+}
+
+.links__quienesomos li:hover a {
+    color: #06d6a0;
+}
+
+.linea {
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+}
+
+.icons {
+    display: flex;
+    padding: 15px 0;
+}
+
+.icons li {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.icons li i {
+    font-size: 26px;
+    opacity: 0.8;
+}
+
+.icons li i:hover {
+    color: #06d6a0;
+}
+
+/*****************/
+@media (min-width: 320px) and (max-width: 992px) {
+    .quienessomos {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .img-quienessomos {
+        height: 100vh;
+    }
+
+    .content {
+        height: 100vh;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .content span {
+        margin: 20px 0;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .links__quienesomos li a {
+        font-size: 14px;
+    }
+
+    .links__quienesomos {
+        margin: 5px 0;
+    }
+
+    .links__quienesomos li {
+        padding: 6px 10px;
+    }
+
+    .icons li i {
+        font-size: 15px;
+    }
+}
+
+.header {
+    background-color: #121315;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "rowdies", Arial, Helvetica, sans-serif;
+}
+
+.header h3 {
+    color: whitesmoke;
+}
+
+.form {
+    padding: 10px;
+    justify-content: center;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+h2 {
+    font-family: "rowdies", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "rowdies", Arial, Helvetica, sans-serif;
+}
+
+.container-marcas {
+    background-color: rgba(0, 0, 0, 0.589);
+    border: solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container-marcas img {
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.container-marcas figcaption {
+    color: white;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+.container-productos {
+    border: solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    display: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+input {
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.titulo-tabla {
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.probar-paleta:hover {
+    color: #06d6a0;
+}
+
+.titulo-noticias {
+    margin: 5px;
+    padding: 10px;
+}
+
+.texto-noticias {
+    margin: 10px;
+    padding: 15px;
+}
+
+.link-paddel-tour {
+    padding: 10px;
+    margin: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

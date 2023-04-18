@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+@font-face {
+    font-family: "rowdies";
+    src: url(../fonts/rowdies.ttf);
+}
+body {
+    font-family: "rowdies", Arial, Helvetica, sans-serif;
+    background-color: rgba(10, 10, 10, 0.24);
+    align-items: center;
+    justify-content: center;
+    
+}
+.space {
+    padding: 35px;
+}
+.boton-paginas {
+    background-color: rgb(204, 172, 111);
+    border: solid;
+
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+
+}
+
+ul li a:hover {
+    color: #06d6a0;
+}
+
+.icon__cart{
+    margin-left: 10px;
+    
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space;
+}
+
+.nav-link {
+    font-size: 1.5em;
+    color: whitesmoke
+}
+
+.nav-link:hover {
+    color: #06d6a0;
+}
+a {
+
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    padding: 0px;
+    text-decoration: none;
+    color: rgb(224, 12, 12);
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.404);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+
+}
+
+/* a todos los hijos directos */
+.image__overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover>* {
+    transform: translateY(0);
+}
+
+.image__target {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 2.25em;
+    margin-top: 0.25em;
+
+}
+@media (min-width : 320px) and (max-width: 680px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: fit-content;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .lista {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: fit-content;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .container-productos {
+        display: grid;
+        border-style: none;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        background-color: white;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .header {
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .header__header {
+        display: grid;
+        padding: 5px;
+        margin: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+
+}
+footer {
+    display: flex;
+    background-color: #121315;
+    color: #a7a7a7;
+    font-size: 16px;
+}
+
+.row {
+    padding: 1em 1em;
+}
+
+.row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    align-items: stretch;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+}
+
+.footer-h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+
+.footer-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+.footer-li a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 1.5em
+}
+
+.footer-li ul {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.footer-li {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+
+.about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+}
+
+.contenedor-mapa h3 {
+    color: white;
+
+}
+
+.informacion {
+    padding: 10px;
+}
+
+div.social {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+}
+
+.social i {
+    color: #f8f8f8;
+}
+@media screen and (max-width: 850px) {
+    .row.primary {
+        grid-template-columns: 1fr;
+
+
+    }
+
+    .mapa {
+        display: none;
+    }
+}
