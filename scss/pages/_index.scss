@@ -1,4 +1,3 @@
-
 .header {
     background-color: #121315d3;
     color: rgb(255, 255, 255);
@@ -10,6 +9,7 @@
     align-items: center;
     font-family: "rowdies", Arial, Helvetica, sans-serif;
 }
+
 .header h3 {
     color: whitesmoke;
 }
@@ -20,6 +20,7 @@
     justify-content: center;
 
 }
+
 ol,
 ul {
     list-style: none;
@@ -43,6 +44,7 @@ h3 {
     font-weight: 200;
     font-family: "rowdies", Arial, Helvetica, sans-serif;
 }
+
 .container-marcas {
 
     background-color: rgba(0, 0, 0, 0.589);
@@ -64,10 +66,11 @@ h3 {
 }
 
 .container-marcas figcaption {
-    color: white;
+    color: $color-letras;
     font-size: 1.3em;
     font-style: italic;
 }
+
 .container-productos {
     border: solid black;
     background-color: white;
@@ -77,17 +80,22 @@ h3 {
     text-align: center;
 
 }
+
 .logo {
     display: left;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    
 }
+
+
 input {
     text-align: center;
     border-radius: 20px;
     font-size: 1em;
 }
+
 .titulo-tabla {
     text-decoration: underline;
     padding: 10px;
@@ -103,22 +111,31 @@ p {
 
 
 .probar-paleta:hover {
-    color: #06d6a0;
+    color: #db3d0d;
 }
+
 .titulo-noticias {
     margin: 5px;
     padding: 10px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .texto-noticias {
     margin: 10px;
     padding: 15px;
-    
+
 }
 
 .link-paddel-tour {
     padding: 10px;
     margin: 10px;
 
+}
+
+.linkpaddel {
+    color: rgba(52, 14, 221, 0.822);
+}
+
+.linkpaddel:hover {
+    color: $color-letras;
 }

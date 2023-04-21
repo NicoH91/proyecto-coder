@@ -5,17 +5,23 @@
     width: 100%;
 
 }
+
 @font-face {
     font-family: "rowdies";
     src: url(../fonts/rowdies.ttf);
 }
+
 body {
     font-family: "rowdies", Arial, Helvetica, sans-serif;
     background-color: rgba(10, 10, 10, 0.24);
     align-items: center;
     justify-content: center;
-    
+
 }
+
+$color-letras: whitesmoke;
+$color-navfooter: #121315d3;
+
 .space {
     padding: 35px;
 }
@@ -24,11 +30,17 @@ body {
 ul li a:hover {
     color: #06d6a0;
 }
-
-.icon__cart{
-    margin-left: 10px;
+.btn{
+    width: auto;
+    margin: 10px;
     
 }
+.icon__cart {
+    margin-left: 10px;
+    font-size: 40px;
+
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -37,24 +49,28 @@ ul li a:hover {
 
 .nav-link {
     font-size: 1.5em;
-    color: whitesmoke
+    color: $color-letras
 }
 
 .nav-link:hover {
     color: #06d6a0;
 }
+
 a {
 
     display: flex;
     justify-content: center;
     gap: 1px;
+    font-size: 1.5em;
     padding: 0px;
     text-decoration: none;
-    color: #a7a7a7;
+    color: #ec0404b2;
 }
-a:hover{
+
+a:hover {
     color: #06d6a0;
 }
+
 .image {
     position: relative;
     width: 100%;
@@ -71,8 +87,8 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.404);
-    color: whitesmoke;
+    background: $color-navfooter;
+    color: $color-letras;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,6 +126,7 @@ a:hover{
     margin-top: 0.25em;
 
 }
+
 @media (min-width : 320px) and (max-width: 680px) {
     .nav {
         display: grid;
@@ -159,11 +176,12 @@ a:hover{
     }
 
 }
+
 footer {
     margin-right: 2px;
     display: flex;
-    background-color:  #121315d3;
-    color: #a7a7a7;
+    background-color: $color-navfooter;
+    color: $color-letras;
     font-size: 16px;
 }
 
@@ -188,7 +206,7 @@ footer {
 .footer-h3 {
     width: 100%;
     text-align: left;
-    color: white;
+    color: $color-letras;
     font-size: 1.4em;
     white-space: nowrap;
 }
@@ -249,12 +267,14 @@ div.social {
 }
 
 .social i {
-    color: #f8f8f8;
+    color: $color-letras;
 }
+
 @media (min-width: 320px) and (max-width: 850px) {
-    footer{
+    footer {
         margin: auto;
     }
+
     .row.primary {
         grid-template-columns: 1fr;
 
