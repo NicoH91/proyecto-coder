@@ -8,8 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <meta name="description" content=" Local de paddel|| Venta de paletas de paddel ||Tienda mas completa de Argentina || Envios a todo el pais || podes probar tu paleta!">
+    <meta name="description"
+        content=" Local de paddel|| Venta de paletas de paddel ||Tienda mas completa de Argentina || Envios a todo el pais || podes probar tu paleta!">
     <title>Padel tour</title>
 </head>
 
@@ -21,7 +23,10 @@
             <h1>Padel Tour </h1>
             <figure>
                 <a href="../index.html">
-                    <img class="logo" src="../img/fuego.jpg" alt="Logo de la pagina">
+                    <img data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500" class="logo" src="../img/fuego.jpg" alt="Logo de la pagina">
                 </a>
             </figure>
             <div>
@@ -70,9 +75,9 @@
 
 
         <div class="container">
-            <h2 class="titulo-pagina-paletas">Pelotas</h2>
+            <h2 data-aos="zoom-out" class="titulo-pagina-paletas">Pelotas</h2>
             <br>
-            <div class="container__productos--pelotas">
+            <div data-aos="zoom-in" class="container__productos--pelotas">
 
                 <div class="image ">
                     <a href="construccion.html">
@@ -106,7 +111,7 @@
             </div>
             <div class="space"></div>
 
-            <div class="container__productos--pelotas">
+            <div data-aos="zoom-in" class="container__productos--pelotas">
                 <div class="image">
                     <a href="construccion.html">
                         <img class="  image__img " src="../img/img-pelotas-html/head-tour.jpg" alt="">
@@ -146,7 +151,7 @@
             </h3>
 
 
-            <div class="responsive-video">
+            <div data-aos="zoom-in" class="responsive-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/DADADSQg2ms?start=103"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -158,12 +163,17 @@
 
         </div>
         <div class="space"></div>
-        <h4 class="text-center">No se venden pelotas individuales</h4>
+        <h4 data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" class="text-center">No se venden pelotas individuales</h4>
         <br>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-    crossorigin="anonymous"></script>
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <footer>
     <div class="row primary">
@@ -187,7 +197,7 @@
                 <li class="informacion">Horarios de Atencion</li>
                 <li class="informacion">Lunes - Viernes</li>
                 <li class="informacion"> 9:00-20:00</li>
-               
+
             </ul>
         </div>
         <div class="column links">
@@ -199,13 +209,13 @@
                     <a href="paletas.html">Paletas</a>
                 </li>
                 <li class="footer-li">
-                    <a href="pelotas.html">Pelotas</a>
+                    <a href="#">Pelotas</a>
                 </li>
                 <li class="footer-li">
                     <a href="../index.html">Accesorios</a>
                 </li>
                 <li class="footer-li">
-                    <a href="#">Nosotros</a>
+                    <a href="quienes-somos.html">Nosotros</a>
                 </li>
                 <li class="footer-li">
                     <a href="./contacto.html">Contacto</a>
