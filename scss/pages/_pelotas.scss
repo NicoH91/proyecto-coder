@@ -1,5 +1,5 @@
 .pelotas-aviso {
-    font-family: "rowdies";
+    font-family: $tipografia;
     font-size: 2rem;
     color: red;
     padding: 20px;
@@ -14,7 +14,7 @@
 }
 
 .header__construccion {
-    font-family: "rowdies";
+    font-family:$tipografia;
 
     font-size: 3rem;
     height: 100vh;

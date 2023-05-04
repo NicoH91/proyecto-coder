@@ -1,5 +1,5 @@
 .quienes__somos {
-    font-family: 'rowdies', serif;
+    font-family: $tipografia;
     display: grid;
     background-color: #f4f4f4;
     align-content: center;
@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 90vh;
-    width: 85vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -74,11 +74,11 @@
 
 
 .links li:hover {
-    border-color: #06d6a0;
+    border-color:map-get($colores, hoverli );
 }
 
 .links li:hover a {
-    color: #06d6a0;
+    color: map-get($colores, hoverli );
 }
 
 .vertical-line {
@@ -108,21 +108,74 @@
 }
 
 .iconos li i:hover {
-    color: #06d6a0;
+    color: map-get($colores, hoverli );
 }
 
 
 /*****************/
 
-@media (min-width :320px) and (max-width: 992px) {
+
+@media (min-width :580px) and (max-width: 992px) {
     .quienes__somos--section {
         grid-template-columns: 1fr;
 
-        width: 100%;
+        width: auto;
     }
 
     .imagen__quienes {
+
         height: 100vh;
+        width: auto;
+    }
+
+    .content {
+        height: 100vh;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .content span {
+        margin: 20px 0;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .links li a {
+        font-size: 14px;
+    }
+
+    .links {
+        margin: 5px 0;
+    }
+
+    .links li {
+        padding: 6px 10px;
+
+    }
+
+    .iconos li i {
+        font-size: 15px;
+    }
+}
+
+/*****************/
+
+
+@media (min-width :320px) and (max-width: 579px ) {
+    .quienes__somos--section {
+        grid-template-columns: 1fr;
+
+        width: auto;
+    }
+
+    .imagen__quienes {
+
+        display: none;
     }
 
     .content {

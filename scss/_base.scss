@@ -11,16 +11,27 @@
     src: url(../fonts/rowdies.ttf);
 }
 
+$colores: (
+    color-letras: whitesmoke,
+    colornavfooter: #121315d3,
+    hoverli: #06d6a0,
+    links-a :  #ec0404b2,
+    footer-li : #a7a7a7,
+    
+);
+$tipografia: "rowdies", Arial, Helvetica, sans-serif;
+
+
+
 body {
-    font-family: "rowdies", Arial, Helvetica, sans-serif;
+    font-family: $tipografia;
     background-color: rgba(10, 10, 10, 0.24);
     align-items: center;
     justify-content: center;
 
 }
 
-$color-letras: whitesmoke;
-$color-navfooter: #121315d3;
+
 
 .space {
     padding: 35px;
@@ -28,13 +39,16 @@ $color-navfooter: #121315d3;
 
 
 ul li a:hover {
-    color: #06d6a0;
-}
-.btn{
-    width: auto;
-    margin: 10px;
+    color: map-get($colores , hoverli)
     
 }
+
+.btn {
+    width: auto;
+    margin: 10px;
+
+}
+
 .icon__cart {
     margin-left: 10px;
     font-size: 40px;
@@ -49,11 +63,11 @@ ul li a:hover {
 
 .nav-link {
     font-size: 1.5em;
-    color: $color-letras
+    color: map-get($colores,color-letras )
 }
 
 .nav-link:hover {
-    color: #06d6a0;
+    color: map-get($colores , hoverli)
 }
 
 a {
@@ -64,11 +78,11 @@ a {
     font-size: 1.5em;
     padding: 0px;
     text-decoration: none;
-    color: #ec0404b2;
+    color:map-get($colores, links-a );
 }
 
 a:hover {
-    color: #06d6a0;
+    color: map-get($colores , hoverli);
 }
 
 .image {
@@ -87,8 +101,8 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: $color-navfooter;
-    color: $color-letras;
+    background: map-get($colores , colornavfooter );
+    color: map-get($colores,color-letras );
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,9 +194,9 @@ a:hover {
 footer {
     margin-right: 2px;
     display: flex;
-    background-color: $color-navfooter;
-    color: $color-letras;
-    font-size: 16px;
+    background-color: map-get($colores, colornavfooter );
+    color: map-get($colores,color-letras );
+    font-size: 1rem;
 }
 
 .row {
@@ -206,7 +220,7 @@ footer {
 .footer-h3 {
     width: 100%;
     text-align: left;
-    color: $color-letras;
+    color: map-get($colores,color-letras );
     font-size: 1.4em;
     white-space: nowrap;
 }
@@ -224,18 +238,18 @@ footer {
 }
 
 .footer-li a {
-    color: #a7a7a7;
+    color: map-get($colores,  footer-li );
     text-decoration: none;
     font-size: 1.5em
 }
 
 .footer-li ul {
-    color: #a7a7a7;
+    color:map-get($colores,  footer-li );
     text-decoration: none;
 }
 
 .footer-li {
-    color: #a7a7a7;
+    color: map-get($colores,  footer-li );
     text-decoration: none;
 }
 
@@ -260,14 +274,14 @@ footer {
 
 div.social {
     display: flex;
-    justify-content: space-evenly;
     font-size: 2.4em;
     flex-direction: row;
+    justify-content: flex-end;
     margin-top: 0.5em;
 }
 
 .social i {
-    color: $color-letras;
+    color:map-get($colores, color-letras );
 }
 
 @media (min-width: 320px) and (max-width: 850px) {

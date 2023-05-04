@@ -113,7 +113,7 @@ a:hover {
 }
 
 .image__description {
-  font-size: 2.em;
+  font-size: 2.25em;
   margin-top: 0.25em;
 }
 
@@ -162,7 +162,7 @@ footer {
   display: flex;
   background-color: rgba(18, 19, 21, 0.8274509804);
   color: whitesmoke;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .row {
@@ -238,9 +238,9 @@ footer {
 
 div.social {
   display: flex;
-  justify-content: space-evenly;
   font-size: 2.4em;
   flex-direction: row;
+  justify-content: flex-end;
   margin-top: 0.5em;
 }
 
@@ -265,7 +265,7 @@ div.social {
 }
 
 strong {
-  font-family: "rowdies";
+  font-family: "rowdies", Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 2em;
 }
@@ -350,6 +350,7 @@ strong {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
+  text-align: start;
 }
 
 .form :where(.gender-option, .gender) {
@@ -459,7 +460,7 @@ strong {
 }
 
 .pelotas-aviso {
-  font-family: "rowdies";
+  font-family: "rowdies", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: red;
   padding: 20px;
@@ -472,7 +473,7 @@ strong {
 }
 
 .header__construccion {
-  font-family: "rowdies";
+  font-family: "rowdies", Arial, Helvetica, sans-serif;
   font-size: 3rem;
   height: 100vh;
   width: 100%;
@@ -488,7 +489,7 @@ strong {
 }
 
 .quienes__somos {
-  font-family: "rowdies", serif;
+  font-family: "rowdies", Arial, Helvetica, sans-serif;
   display: grid;
   background-color: #f4f4f4;
   align-content: center;
@@ -499,7 +500,7 @@ strong {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 90vh;
-  width: 85vw;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -597,13 +598,49 @@ strong {
 }
 
 /*****************/
-@media (min-width: 320px) and (max-width: 992px) {
+@media (min-width: 580px) and (max-width: 992px) {
   .quienes__somos--section {
     grid-template-columns: 1fr;
-    width: 100%;
+    width: auto;
   }
   .imagen__quienes {
     height: 100vh;
+    width: auto;
+  }
+  .content {
+    height: 100vh;
+  }
+  .content h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .content span {
+    margin: 20px 0;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .links li a {
+    font-size: 14px;
+  }
+  .links {
+    margin: 5px 0;
+  }
+  .links li {
+    padding: 6px 10px;
+  }
+  .iconos li i {
+    font-size: 15px;
+  }
+}
+/*****************/
+@media (min-width: 320px) and (max-width: 579px) {
+  .quienes__somos--section {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+  .imagen__quienes {
+    display: none;
   }
   .content {
     height: 100vh;
@@ -668,7 +705,7 @@ h2 {
 h3 {
   color: black;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 200;
   font-family: "rowdies", Arial, Helvetica, sans-serif;
 }
@@ -708,6 +745,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  overflow: hidden;
 }
 
 input {
@@ -728,13 +766,13 @@ p {
 }
 
 .probar-paleta:hover {
-  color: #db3d0d;
+  color: #06d6a0;
 }
 
 .titulo-noticias {
   margin: 5px;
   padding: 10px;
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.966);
 }
 
 .texto-noticias {
@@ -748,7 +786,7 @@ p {
 }
 
 .linkpaddel {
-  color: rgba(52, 14, 221, 0.822);
+  color: #06d6a0;
 }
 
 .linkpaddel:hover {

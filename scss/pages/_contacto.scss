@@ -6,7 +6,7 @@
 
 
 strong {
-    font-family: "rowdies";
+    font-family: $tipografia;
     font-weight: 300;
     font-size: 2em;
 }
@@ -93,6 +93,7 @@ strong {
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 8px;
+     text-align: start;
 }
 
 .form :where(.gender-option, .gender) {
