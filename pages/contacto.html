@@ -27,7 +27,7 @@
             <figure>
                 <a href="../index.html">
                     <img data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
-                        data-aos-duration="500" class="logo" src="../img/fuego.jpg" alt="Logo de la pagina">
+                        data-aos-duration="500" class="logo" src="../img/logo.png" alt="Logo de la pagina">
                 </a>
             </figure>
             <div>
@@ -90,22 +90,22 @@
                 <form action="#" class="form">
                     <div class="input-box">
                         <label>Nombre Completo</label>
-                        <input type="text" placeholder="Nombre completo" required />
+                        <input type="text" placeholder="Nombre completo" required  minlength="4" maxlength="12" size="10" />
                     </div>
 
                     <div class="input-box">
                         <label>Direccion de Correo</label>
-                        <input type="text" placeholder="Email" required />
+                        <input type="text" placeholder="Email" required  minlength="4" maxlength="15" size="10" />
                     </div>
 
                     <div class="column">
                         <div class="input-box">
                             <label> Telefono</label>
-                            <input type="number" placeholder="Numero de telefono" required />
+                            <input type="number" placeholder="Numero de telefono" required  >
                         </div>
                         <div class="input-box">
                             <label>Dia de prueba</label>
-                            <input type="date" placeholder="Dia de prueba" required />
+                            <input type="date" placeholder="Dia de prueba" required  min="2023-5-01" max="2024-10-01" />
                         </div>
                     </div>
                     <div class="gender-box">
@@ -170,10 +170,10 @@
                 La tienda mas completa del pais
             </h4>
             <div class="social">
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-whatsapp"></i>
-                <i class="bi bi-youtube"></i>
+                <a  target="_blank" href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a target="_blank" href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+                <a target="_blank" href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
             </div>
         </div>
         <div class="column links">
@@ -198,9 +198,7 @@
                 <li class="footer-li">
                     <a href="pelotas.html">Pelotas</a>
                 </li>
-                <li class="footer-li">
-                    <a href="../index.html">Accesorios</a>
-                </li>
+                
                 <li class="footer-li">
                     <a href="quienes-somos.html">Nosotros</a>
                 </li>
